@@ -1,5 +1,4 @@
 
-
     <!-- about -->
     <div class="about py-5">
         <div class="container py-xl-5 py-lg-3">
@@ -158,7 +157,7 @@ think you'll find something special at the School..</p>
                         <div class="col-9 agile-why-text-2">
                             <h4 class="text-capitalize text-white font-weight-bold mb-3">Our Vision</h4>
                             <p>"Student with Indian hearts and Global mind" to pace with the fast changing world.</p>
-                            <a class="btn mt-3 service-button p-0" href="#" role="button">Read More
+                            <a class="btn mt-3 service-button p-0" href="<?php echo site_url('web/about');?>" role="button">Read More
                                 <i class="fas fa-long-arrow-alt-right ml-1"></i>
                             </a>
                         </div>
@@ -174,7 +173,7 @@ think you'll find something special at the School..</p>
                         <div class="col-9 agile-why-text-2">
                             <h4 class="text-capitalize text-white font-weight-bold mb-3">Our Mission</h4>
                             <p>Our mission is to provide valuebased education and mould the character of the younger generation through a system of wholesome learning</p>
-                            <a class="btn mt-3 service-button p-0" href="#" role="button">Read More
+                            <a class="btn mt-3 service-button p-0" href="<?php echo site_url('web/about');?>" role="button">Read More
                                 <i class="fas fa-long-arrow-alt-right ml-1"></i>
                             </a>
                         </div>

@@ -6,13 +6,11 @@
                 </button>
                 <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                     <ul class="navbar-nav justify-content-center">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
+                        <li class="<?php if($menu==1){echo 'nav-item active';}else{echo 'nav_item';}?>">
+                            <a class="nav-link text-white" href="<?php echo site_url('web');?>">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">About Us</a>
+                        <li class="<?php if($menu==2){echo 'nav-item active';}else{echo 'nav_item';}?>">
+                            <a class="nav-link text-white" href="<?php echo site_url('web/about');?>">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -35,8 +33,7 @@
                                 <a class="dropdown-item" href="#">Syllabus</a>
                                 <a class="dropdown-item" href="#">Book List</a>
                                 <a class="dropdown-item" href="#">Exam</a>
-                                <a class="dropdown-item" href="#">E-books</a>
-                                <a class="dropdown-item" href="#">ASL Material</a>
+                                <a class="dropdown-item" href="#">E-books</a>                                
                                 <a class="dropdown-item" href="#">Previous Year's Paper</a>                                
                             </div>
                         </li>

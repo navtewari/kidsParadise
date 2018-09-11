@@ -93,7 +93,7 @@
                                 <div class="agile-addresmk">
                                     <p>
                                         <span class="font-weight-bold text-dark">Call Us</span>
-                                        05949-262486
+                                        00000-11111
                                     </p>
                                 </div>
                             </div>                                
@@ -104,6 +104,12 @@
         </div>
         <!-- //middle header -->
     </header>
-    <!-- //header -->    
+    <!-- //header -->        
     
-    <?php $this->load->view('templates/banner-index');?>
+    <?php 
+        if($menu==1){
+            $this->load->view('templates/banner-index');
+        }else{
+            $this->load->view('templates/banner');
+        }
+    ?>

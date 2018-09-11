@@ -18,9 +18,9 @@
                             
                         </div>
                         <p class="para-agileits-w3layouts text-white">
-                            <i class="fas fa-map-marker pr-3"></i>Kids Paradise public school, Dinespur, Udam-Singh Nagar</p>                            
+                            <i class="fas fa-map-marker pr-3"></i>Kids Paradise public school, <br><span style="padding-left:27px;">DURGAPUR No.-2,DINESHPUR, Dist.- U.S.NAGAR(UTTARAKHAND)</span></p>                            
                         <p class="para-agileits-w3layouts text-white my-sm-3 my-2">
-                            <i class="fas fa-phone pr-3"></i>05949-262486</p>
+                            <i class="fas fa-phone pr-3"></i>00000-111111</p>
                         <p class="para-agileits-w3layouts">
                             <i class="far fa-envelope-open pr-2"></i>
                             <a href="mailto:kppsdineshpur@gmail.com" class=" text-white">kppsdineshpur@gmail.com</a>

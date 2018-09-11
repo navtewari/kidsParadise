@@ -66,6 +66,7 @@ p {
     letter-spacing: 1px;
     line-height: 1.9;
     color: #999;
+    text-align: justify;
 }
 
 ul,
@@ -2106,7 +2107,7 @@ li.subitem1 p {
         width: 80%;
     }
     .banner-agile-2 {
-        min-height: 320px;
+        min-height: 250px;
     }
 }
 
