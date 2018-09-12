@@ -17,12 +17,12 @@
                                 Administration
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">CBSE Format</a>
-                                <a class="dropdown-item" href="#">House System</a>
-                                <a class="dropdown-item" href="#">School Parliament</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">CBSE Format</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">House System</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">School Parliament</a>
                                 <div class="dropdown-divider"></div>           
-                                <a class="dropdown-item" href="#">Examination</a>
-                                <a class="dropdown-item" href="#">Admission</a>                                                                                     
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Examination</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Admission</a>                                                                                     
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -30,11 +30,11 @@
                                 Academics
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Syllabus</a>
-                                <a class="dropdown-item" href="#">Book List</a>
-                                <a class="dropdown-item" href="#">Exam</a>
-                                <a class="dropdown-item" href="#">E-books</a>                                
-                                <a class="dropdown-item" href="#">Previous Year's Paper</a>                                
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Syllabus</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Book List</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Exam</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">E-books</a>                                
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Previous Year's Paper</a>                                
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -42,9 +42,9 @@
                                 Activities
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Sports & Games</a>
-                                <a class="dropdown-item" href="#">Cultural</a>
-                                <a class="dropdown-item" href="#">Others</a>                                                             
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Sports & Games</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Cultural</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Others</a>                                                             
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -52,22 +52,22 @@
                                 Media
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">News</a>
-                                <a class="dropdown-item" href="#">Photos</a>
-                                <a class="dropdown-item" href="#">Videos</a>                                                             
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">News</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Photos</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Videos</a>                                                             
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Downloads</a>
+                            <a class="nav-link text-white" href="<?php echo site_url('web/uc')?>">Downloads</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Achievements</a>
+                            <a class="nav-link text-white" href="<?php echo site_url('web/uc')?>">Achievements</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Alumni</a>
+                            <a class="nav-link text-white" href="<?php echo site_url('web/uc')?>">Alumni</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contact Us</a>
+                        <li class="<?php if($menu==3){echo 'nav-item active';}else{echo 'nav_item';}?>">
+                            <a class="nav-link text-white" href="<?php echo site_url('web/contact')?>">Contact Us</a>
                         </li>
                     </ul>
                 </div>

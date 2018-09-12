@@ -23,5 +23,21 @@ class Web extends CI_Controller {
         $this->load->view('about');
         $this->load->view('templates/footer');
     }
+    
+    function uc() {
+        $data_['pageName'] = 'Under Construction';
+        $data_['menu'] = 0;
+        $this->load->view('templates/header', $data_);
+        $this->load->view('uc');
+        $this->load->view('templates/footer');
+    }
+    
+    function contact() {
+        $data_['pageName'] = 'Contact Us';
+        $data_['menu'] = 3;
+        $this->load->view('templates/header', $data_);
+        $this->load->view('contact');
+        //$this->load->view('templates/footer');
+    }
 
 }
