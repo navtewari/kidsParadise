@@ -69,7 +69,7 @@ think you'll find something special at the School..</p>
                                     <li class="my-2">
                                         <i class="far fa-clock mr-2"></i><?php echo $item_->IMP_DATE_EVENT;?></li>
                                     <li>
-                                        <i class="fas fa-map-marker mr-2"></i><?php echo $item_->IMP_DATE_EVENT;?></li>
+                                        <i class="fas fa-map-marker mr-2"></i><?php echo $item_->DESC_;?></li>
                                 </ul>
                             </div>
                         </div>
