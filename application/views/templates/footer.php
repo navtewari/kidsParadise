@@ -6,7 +6,7 @@
                         <h2 class="contact-title text-capitalize text-white font-weight-light mb-sm-4 mb-3">our
                             <span class="font-weight-bold">directions</span>
                         </h2>
-                        <iframe style="height:250px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.495758873587!2d-74.0005340845242!3d40.72911557933012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25991b7473067%3A0x59fbd02f7b519ce8!2s550+LaGuardia+Pl%2C+New+York%2C+NY+10012%2C+USA!5e0!3m2!1sen!2sin!4v1516166447283"></iframe>
+                        <div class="mapouter"><div class="gmap_canvas"><iframe width="auto" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=Kids%20Paradise%20public%20school%2C%20%20DURGAPUR%20No.-2%2CDINESHPUR%2C%20Dist.-%20U.S.NAGAR(UTTARAKHAND)&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="#"></a></div><style>.mapouter{height:250px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:auto;}</style></div>                        
                         
                     </div>
                     <div class="col-lg-6 contact-agileits-w3layouts mt-lg-0 mt-4">

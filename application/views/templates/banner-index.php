@@ -34,7 +34,7 @@
                 <h3 class="text-capitalize text-white p-4">your bright future
                     <b>is our mission!</b>
                 </h3>
-                <p class="px-4 py-3 text-dark">Better education for better world!</p>                
+                <p class="px-4 py-3 text-dark">We provide Quality Education!</p>                
             </div>
         </div>
 
