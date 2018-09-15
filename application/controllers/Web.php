@@ -9,10 +9,13 @@ class Web extends CI_Controller {
     }
 
     function index() {
+        $this->load->model('my_model', 'mm');
+        $data['news'] = $this->mm->get_most_recent_news();
+        $data['imp_dates'] = $this->mm->get_most_recent_imp_dates();
         $data_['pageName'] = 'Home';
         $data_['menu'] = 1;
         $this->load->view('templates/header', $data_);
-        $this->load->view('index');
+        $this->load->view('index', $data);
         $this->load->view('templates/footer');
     }
 
@@ -22,6 +25,22 @@ class Web extends CI_Controller {
         $this->load->view('templates/header', $data_);
         $this->load->view('about');
         $this->load->view('templates/footer');
+    }
+    
+    function uc() {
+        $data_['pageName'] = 'Under Construction';
+        $data_['menu'] = 0;
+        $this->load->view('templates/header', $data_);
+        $this->load->view('uc');
+        $this->load->view('templates/footer');
+    }
+    
+    function contact() {
+        $data_['pageName'] = 'Contact Us';
+        $data_['menu'] = 3;
+        $this->load->view('templates/header', $data_);
+        $this->load->view('contact');
+        //$this->load->view('templates/footer');
     }
 
 }

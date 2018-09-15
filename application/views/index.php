@@ -32,111 +32,48 @@ think you'll find something special at the School..</p>
                     <h3 class="title text-capitalize font-weight-light text-dark text-center mb-5">Recent
                         <span class="font-weight-bold">News</span>
                     </h3>
-                    <div class="events-w3ls">
-                        <div class="d-flex">
+                    <?php foreach ($news as $item) { ?>
+                        <?php $dt = explode("/", $item->DATE_); ?>
+                        <div class="d-flex my-4">
                             <div class="col-sm-2 col-3 events-up p-3 text-center">
-                                <h5 class="text-white font-weight-bold">28
-                                    <span class="border-top font-weight-light pt-2 mt-2">Sep</span>
+                                <h5 class="text-white font-weight-bold"><?php echo $dt[0]; ?>
+                                    <span class="border-top font-weight-light pt-2 mt-2"><?php echo $this->my_library->getMonthsName(abs($dt[1])); ?></span>
                                 </h5>
                             </div>
                             <div class="col-sm-10 col-9 events-right">
-                                <h4 class="text-dark">Admission Fair Spring </h4>
+                                <h4 class="text-dark"><?php echo $item->SUBJECT; ?> </h4>
                                 <ul class="list-unstyled">
-                                    <li class="my-2">
-                                        <i class="far fa-clock mr-2"></i>5.00 pm - 7.30 pm</li>
-                                    <li>
-                                        <i class="fas fa-map-marker mr-2"></i>Kids Paradise School.</li>
+                                    <!--li class="my-2">
+                                        <i class="far fa-clock mr-2"></i>5.00 pm - 7.30 pm</li-->
+                                    <li><i class="fas fa-map-marker mr-2"></i>Kids Paradise School.</li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="d-flex my-4">
-                        <div class="col-sm-2 col-3 events-up p-3 text-center">
-                            <h5 class="text-white font-weight-bold">28
-                                <span class="border-top font-weight-light pt-2 mt-2">Sep</span>
-                            </h5>
-                        </div>
-                        <div class="col-sm-10 col-9 events-right">
-                            <h4 class="text-dark">Admission Fair Spring </h4>
-                            <ul class="list-unstyled">
-                                <li class="my-2">
-                                    <i class="far fa-clock mr-2"></i>5.00 pm - 7.30 pm</li>
-                                <li>
-                                    <i class="fas fa-map-marker mr-2"></i>Kids Paradise School.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-sm-2 col-3 events-up p-3 text-center">
-                            <h5 class="text-white font-weight-bold">28
-                                <span class="border-top font-weight-light pt-2 mt-2">Sep</span>
-                            </h5>
-                        </div>
-                        <div class="col-sm-10 col-9 events-right">
-                            <h4 class="text-dark">Admission Fair Spring </h4>
-                            <ul class="list-unstyled">
-                                <li class="my-2">
-                                    <i class="far fa-clock mr-2"></i>5.00 pm - 7.30 pm</li>
-                                <li>
-                                    <i class="fas fa-map-marker mr-2"></i>Kids Paradise School.</li>
-                            </ul>
-                        </div>
-                    </div>
+                <?php } ?>
                 </div>
                 <div class="col-lg-6 events">
                     <h3 class="title text-capitalize font-weight-light text-dark text-center mb-5">Important 
                         <span class="font-weight-bold">dates</span>
                     </h3>
-                    <div class="events-w3ls">
-                        <div class="d-flex">
+                    <?php foreach($imp_dates as $item_){?>
+                        <?php $dt_ = explode("-", $item_->DATE_); ?>
+                        <div class="d-flex my-4">
                             <div class="col-sm-2 col-3 events-up p-3 text-center">
-                                <h5 class="text-white font-weight-bold">28
-                                    <span class="border-top font-weight-light pt-2 mt-2">Sep</span>
+                                <h5 class="text-white font-weight-bold"><?php echo $dt_[2];?>
+                                    <span class="border-top font-weight-light pt-2 mt-2"><?php echo $this->my_library->getMonthsName(abs($dt[1])); ?></span>
                                 </h5>
                             </div>
                             <div class="col-sm-10 col-9 events-right">
-                                <h4 class="text-dark">Admission Fair Spring </h4>
+                                <h4 class="text-dark"><?php echo date_format(date_create($item_->IMP_DATE), 'd-M-Y');?> </h4>
                                 <ul class="list-unstyled">
                                     <li class="my-2">
-                                        <i class="far fa-clock mr-2"></i>5.00 pm - 7.30 pm</li>
+                                        <i class="far fa-clock mr-2"></i><?php echo $item_->IMP_DATE_EVENT;?></li>
                                     <li>
-                                        <i class="fas fa-map-marker mr-2"></i>Kids Paradise School.</li>
+                                        <i class="fas fa-map-marker mr-2"></i><?php echo $item_->IMP_DATE_EVENT;?></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="d-flex my-4">
-                        <div class="col-sm-2 col-3 events-up p-3 text-center">
-                            <h5 class="text-white font-weight-bold">28
-                                <span class="border-top font-weight-light pt-2 mt-2">Sep</span>
-                            </h5>
-                        </div>
-                        <div class="col-sm-10 col-9 events-right">
-                            <h4 class="text-dark">Admission Fair Spring </h4>
-                            <ul class="list-unstyled">
-                                <li class="my-2">
-                                    <i class="far fa-clock mr-2"></i>5.00 pm - 7.30 pm</li>
-                                <li>
-                                    <i class="fas fa-map-marker mr-2"></i>Kids Paradise School.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-sm-2 col-3 events-up p-3 text-center">
-                            <h5 class="text-white font-weight-bold">28
-                                <span class="border-top font-weight-light pt-2 mt-2">Sep</span>
-                            </h5>
-                        </div>
-                        <div class="col-sm-10 col-9 events-right">
-                            <h4 class="text-dark">Admission Fair Spring </h4>
-                            <ul class="list-unstyled">
-                                <li class="my-2">
-                                    <i class="far fa-clock mr-2"></i>5.00 pm - 7.30 pm</li>
-                                <li>
-                                    <i class="fas fa-map-marker mr-2"></i>Kids Paradise School.</li>
-                            </ul>
-                        </div>
-                    </div>
+                <?php } ?>
                 </div>
             </div>
         </div>
