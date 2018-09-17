@@ -60,7 +60,7 @@ think you'll find something special at the School..</p>
                         <div class="d-flex my-4">
                             <div class="col-sm-2 col-3 events-up p-3 text-center">
                                 <h5 class="text-white font-weight-bold"><?php echo $dt_[2];?>
-                                    <span class="border-top font-weight-light pt-2 mt-2"><?php echo $this->my_library->getMonthsName(abs($dt[1])); ?></span>
+                                    <span class="border-top font-weight-light pt-2 mt-2"><?php echo $this->my_library->getMonthsName(abs($dt_[1])); ?></span>
                                 </h5>
                             </div>
                             <div class="col-sm-10 col-9 events-right">

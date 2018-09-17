@@ -42,9 +42,9 @@
                                 Activities
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Sports & Games</a>
-                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Cultural</a>
-                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Others</a>                                                             
+                                <?php foreach ($activities_category as $categ_item) { ?>
+                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>"><?php echo $categ_item->CATEGORY; ?></a>
+                                <?php }?>      
                             </div>
                         </li>
                         <li class="nav-item dropdown">

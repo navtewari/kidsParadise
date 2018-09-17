@@ -66,7 +66,12 @@ class My_model extends CI_Model {
 
         return $query->result();
     }
-
+    function get_active_activity_category(){
+        $this->db->where('STATUS_', 1);
+        $query = $this->db->get('activities_category');
+        return $query->result();
+    }
+    
     function get_activities() {
         $this->db->order_by('ID', 'desc');
         $this->db->where('STATUS_', 1);
