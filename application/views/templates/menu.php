@@ -12,7 +12,7 @@
                         <li class="<?php if($menu==2){echo 'nav-item active';}else{echo 'nav_item';}?>">
                             <a class="nav-link text-white" href="<?php echo site_url('web/about');?>">About Us</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="<?php if($menu==3){echo 'nav-item active';}else{echo 'nav_item';}?> dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Administration
                             </a>
@@ -25,7 +25,7 @@
                                 <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Admission</a>                                                                                     
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="<?php if($menu==4){echo 'nav-item active';}else{echo 'nav_item';}?> dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Academics
                             </a>
@@ -37,17 +37,19 @@
                                 <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Previous Year's Paper</a>                                
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Activities
-                            </a>
-                            <div class="dropdown-menu">
-                                <?php foreach ($activities_category as $categ_item) { ?>
-                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>"><?php echo $categ_item->CATEGORY; ?></a>
-                                <?php }?>      
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
+                        <?PHP if(count($activities_category)!=0){?>
+                            <li class="<?php if($menu==5){echo 'nav-item active';}else{echo 'nav_item';}?> dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Activities
+                                </a>
+                                <div class="dropdown-menu">
+                                    <?php foreach ($activities_category as $categ_item) { ?>
+                                    <a class="dropdown-item" href="<?php echo site_url('web/activities/'.$categ_item->ACT_CATEG_ID)?>"><?php echo $categ_item->CATEGORY; ?></a>
+                                    <?php }?>      
+                                </div>
+                            </li>
+                        <?php } ?>
+                        <li class="<?php if($menu==6){echo 'nav-item active';}else{echo 'nav_item';}?> dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Media
                             </a>
@@ -57,16 +59,16 @@
                                 <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Videos</a>                                                             
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="<?php if($menu==7){echo 'nav-item active';}else{echo 'nav_item';}?>">
                             <a class="nav-link text-white" href="<?php echo site_url('web/uc')?>">Downloads</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="<?php if($menu==8){echo 'nav-item active';}else{echo 'nav_item';}?>">
                             <a class="nav-link text-white" href="<?php echo site_url('web/uc')?>">Achievements</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="<?php if($menu==9){echo 'nav-item active';}else{echo 'nav_item';}?>">
                             <a class="nav-link text-white" href="<?php echo site_url('web/uc')?>">Alumni</a>
                         </li>
-                        <li class="<?php if($menu==3){echo 'nav-item active';}else{echo 'nav_item';}?>">
+                        <li class="<?php if($menu==10){echo 'nav-item active';}else{echo 'nav_item';}?>">
                             <a class="nav-link text-white" href="<?php echo site_url('web/contact')?>">Contact Us</a>
                         </li>
                     </ul>

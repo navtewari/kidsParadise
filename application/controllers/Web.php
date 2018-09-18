@@ -40,11 +40,30 @@ class Web extends CI_Controller {
     
     function contact() {
         $data_['pageName'] = 'Contact Us';
-        $data_['menu'] = 3;
+        $data_['menu'] = 10;
         $data_['activities_category'] = $this->mm->get_active_activity_category();
         $this->load->view('templates/header', $data_);
         $this->load->view('contact');
         //$this->load->view('templates/footer');
+    }
+
+    function activities($categid){
+        $data['categ'] = $this->mm->getActivityCategory($categid);
+        if($data['categ'] != '-X-'){
+            $data['activity_'] = $this->mm->get_activities($categid);
+            if(count($data['activity_'])!=0){
+                $data_['pageName'] = 'Activities';
+                $data_['menu'] = 5;
+                $data['activities_category'] = $data_['activities_category'] = $this->mm->get_active_activity_category();
+                $this->load->view('templates/header', $data_);
+                $this->load->view('activities', $data);
+                $this->load->view('templates/footer');
+            } else {
+                redirect('web');    
+            }
+        } else {
+            redirect('web');
+        }
     }
 
 }

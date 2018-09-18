@@ -71,9 +71,22 @@ class My_model extends CI_Model {
         $query = $this->db->get('activities_category');
         return $query->result();
     }
-    
-    function get_activities() {
+    function getActivityCategory($categid){
+        $this->db->where('STATUS_', 1);
+        $this->db->where('ACT_CATEG_ID', $categid);
+        $this->db->select('CATEGORY');
+        $query = $this->db->get('activities_category');
+        if($query->num_rows()!=0){
+            $r = $query->row();
+            $categ = $r->CATEGORY;
+        } else {
+            $categ = '-X-';
+        }
+        return $categ;
+    }
+    function get_activities($categid='x') {
         $this->db->order_by('ID', 'desc');
+        if($categid != 'x') $this->db->where('ACTIVITYCATEGID', $categid);
         $this->db->where('STATUS_', 1);
         $this->db->limit(20,0);
         $query = $this->db->get('activities');
