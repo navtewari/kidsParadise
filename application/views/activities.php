@@ -35,7 +35,10 @@
                             <span class="text-dark"><?php echo $item->TITLE_;?></span>
                         </h5>
                         <p><?php echo $item->BRIEF_;?></p>
-                        
+                        <?php if($item->DET_PATH != 'x'){?>
+                            <br>
+                            <a href="<?php echo ADMIN___.'/_assets_/activities/'.$item->DET_PATH;?>" target="_blank" style="background: #DAF7A6; color: #075A01; font-size: 11px; padding: 2px 5px; border-radius: 5px">Click for detail...</a>
+                        <?php } ?>
                     </div>
                 <?php } ?>
                 </div>
