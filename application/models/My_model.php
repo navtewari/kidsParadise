@@ -30,6 +30,7 @@ class My_model extends CI_Model {
         // --------------------
         return $query->result();
     }
+    
     function get_toppers(){
         $query = $this->db->get('toppers');
         return $query->result();

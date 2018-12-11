@@ -55,8 +55,8 @@
                             </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">News</a>
-                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Photos</a>
-                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">Videos</a>                                                             
+                                <a class="dropdown-item" href="<?php echo site_url('web/imagePics')?>">Photos</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/videos')?>">Videos</a>                                                             
                             </div>
                         </li>
                         <li class="<?php if($menu==7){echo 'nav-item active';}else{echo 'nav_item';}?>">

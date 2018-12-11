@@ -28,7 +28,7 @@ class Web extends CI_Controller {
         $this->load->view('about');
         $this->load->view('templates/footer');
     }
-    
+
     function uc() {
         $data_['pageName'] = 'Under Construction';
         $data_['menu'] = 0;
@@ -37,7 +37,7 @@ class Web extends CI_Controller {
         $this->load->view('uc');
         $this->load->view('templates/footer');
     }
-    
+
     function contact() {
         $data_['pageName'] = 'Contact Us';
         $data_['menu'] = 10;
@@ -47,11 +47,11 @@ class Web extends CI_Controller {
         //$this->load->view('templates/footer');
     }
 
-    function activities($categid){
+    function activities($categid) {
         $data['categ'] = $this->mm->getActivityCategory($categid);
-        if($data['categ'] != '-X-'){
+        if ($data['categ'] != '-X-') {
             $data['activity_'] = $this->mm->get_activities($categid);
-            if(count($data['activity_'])!=0){
+            if (count($data['activity_']) != 0) {
                 $data_['pageName'] = 'Activities';
                 $data_['menu'] = 5;
                 $data['activities_category'] = $data_['activities_category'] = $this->mm->get_active_activity_category();
@@ -59,11 +59,45 @@ class Web extends CI_Controller {
                 $this->load->view('activities', $data);
                 $this->load->view('templates/footer');
             } else {
-                redirect('web');    
+                redirect('web');
             }
         } else {
             redirect('web');
         }
+    }
+
+    function imagePics() {
+        $data_['pageName'] = 'Image Gallery (Photos)';
+
+        $data_['menu'] = 6;
+        $data_['activities_category'] = $this->mm->get_active_activity_category();
+        $data_['gallery_category'] = $this->mm->get_gallery_category();
+
+        $this->load->view('templates/header', $data_);
+        $this->load->view('gallery', $data_);
+        $this->load->view('templates/footer');
+    }
+
+    public function gallery_detail($id) {
+        $data_['pageName'] = 'Image Gallery (Photos)';
+
+        $data_['menu'] = 6;
+        $data_['activities_category'] = $this->mm->get_active_activity_category();
+        $data_['gallery'] = $this->mm->get_gallery($id);
+        
+        $this->load->view('templates/header', $data_);
+        $this->load->view('gallery_inner', $data_);
+        $this->load->view('templates/footer');
+    }
+    
+     public function videos() {
+        $data_['pageName'] = 'Video Gallery';
+        $data_['menu'] = 6;
+        $data_['activities_category'] = $this->mm->get_active_activity_category();       
+        
+        $this->load->view('templates/header', $data_);
+        $this->load->view('video', $data_);
+        $this->load->view('templates/footer');
     }
 
 }
