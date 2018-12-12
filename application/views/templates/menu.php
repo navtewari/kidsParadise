@@ -60,7 +60,7 @@
                             </div>
                         </li>
                         <li class="<?php if($menu==7){echo 'nav-item active';}else{echo 'nav_item';}?>">
-                            <a class="nav-link text-white" href="<?php echo site_url('web/uc')?>">Downloads</a>
+                            <a class="nav-link text-white" href="<?php echo site_url('web/downloads')?>">Downloads</a>
                         </li>
                         <li class="<?php if($menu==8){echo 'nav-item active';}else{echo 'nav_item';}?>">
                             <a class="nav-link text-white" href="<?php echo site_url('web/uc')?>">Achievements</a>
