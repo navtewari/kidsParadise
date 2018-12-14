@@ -66,7 +66,7 @@
                                             <li><i class="fas fa-map-marker mr-2"></i><?php echo $item->NEWS;?></li>
                                             <li>
                                                 <?php if($item->PATH_ATTACH != 'x'){?>
-                                                    <a href="<?php echo ADMIN___.'/_assets_/newsevents/'.$item->PATH_ATTACH;?>" target="_blank" style="background: #DAF7A6; color: #075A01; font-size: 11px; padding: 0px 5px; border-radius: 5px; float: right">Attachment</a>
+                                                    <a href="<?php echo ADMIN___.'/_assets_/newsevents/'.$item->PATH_ATTACH;?>" target="_blank" style="margin-top: 5px;background: #808080; color: #ffffff; font-size: 11px; padding: 1px 5px; border-radius: 5px; float: right">Click for detail</a>
                                                 <?php } ?>
                                             </li>
                                         </ul>
