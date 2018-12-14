@@ -63,9 +63,15 @@
                                         <ul class="list-unstyled">
                                             <!--li class="my-2">
                                                 <i class="far fa-clock mr-2"></i>5.00 pm - 7.30 pm</li-->
-                                            <li><i class="fas fa-map-marker mr-2"></i>Kids Paradise School.</li>
+                                            <li><i class="fas fa-map-marker mr-2"></i><?php echo $item->NEWS;?></li>
+                                            <li>
+                                                <?php if($item->PATH_ATTACH != 'x'){?>
+                                                    <a href="<?php echo ADMIN___.'/_assets_/newsevents/'.$item->PATH_ATTACH;?>" target="_blank" style="background: #DAF7A6; color: #075A01; font-size: 11px; padding: 0px 5px; border-radius: 5px; float: right">Attachment</a>
+                                                <?php } ?>
+                                            </li>
                                         </ul>
                                     </div>
+                                    
                                 </div>    
                             </li>
                         <?php } ?> 

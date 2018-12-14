@@ -67,7 +67,7 @@
 <!-- Necessary-JavaScript-File-For-Bootstrap -->
 
 <!-- banner slider -->
-<script src="<?php echo base_url() . 'assets/js/slider.js'; ?>"></script>
+<script src="<?php echo base_url() . 'assets/js/slider.js'; ?>?version=1.1"></script>
 <!-- //banner slider -->
 
 <!-- testimonial-plugin -->

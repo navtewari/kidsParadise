@@ -7,7 +7,15 @@ class My_model extends CI_Model {
     function __construct() {
         parent::__construct();
     }
-    
+    function getallnews(){
+        $this->db->order_by('ID', 'desc');
+        $this->db->where('STATUS',1);
+        $query = $this->db->get('newsevents');
+        // Exceptional Handling
+            $this->_db_error();
+        // --------------------
+        return $query->result();
+    }
     function get_most_recent_news() {
         $this->db->where('DATE_FORMAT(DATE_START, "%Y-%m-%d")<=',date('Y-m-d'));
         $this->db->where('DATE_FORMAT(DATE_END, "%Y-%m-%d")>=',date('Y-m-d'));

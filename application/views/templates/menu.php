@@ -54,7 +54,7 @@
                                 Media
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="<?php echo site_url('web/uc')?>">News</a>
+                                <a class="dropdown-item" href="<?php echo site_url('web/news')?>">News</a>
                                 <a class="dropdown-item" href="<?php echo site_url('web/imagePics')?>">Photos</a>
                                 <a class="dropdown-item" href="<?php echo site_url('web/videos')?>">Videos</a>                                                             
                             </div>

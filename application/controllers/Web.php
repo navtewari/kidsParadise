@@ -66,6 +66,20 @@ class Web extends CI_Controller {
         }
     }
 
+    function news(){
+        $data['news_'] = $this->mm->getallnews();
+        if (count($data['news_']) != 0) {
+            $data_['activities_category'] = $this->mm->get_active_activity_category();
+            $data_['pageName'] = 'News';
+            $data_['menu'] = 7;
+            $this->load->view('templates/header', $data_);
+            $this->load->view('news', $data);
+            $this->load->view('templates/footer');
+        } else {
+            redirect('web');
+        }
+    }
+    
     function downloads() {
         $data['dwnlds'] = $this->mm->getDownloads();
         if (count($data['dwnlds']) != 0) {

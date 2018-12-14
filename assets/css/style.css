@@ -1,3 +1,4 @@
+
 body {
     padding: 0;
     margin: 0;
@@ -320,6 +321,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-nav {
 .banner-w3ls-3,
 .banner-w3ls-4,
 .banner-w3ls-5,
+.banner-w3ls-6,
+.banner-w3ls-7,
 .banner-agile {
     min-height: 700px;
 }
@@ -366,6 +369,27 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-nav {
 
 .banner-w3ls-5 {
     background: url(../images/banner5.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.banner-w3ls-6 {
+    background: url(../images/banner6.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-w3ls-7 {
+    background: url(../images/banner7.jpg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

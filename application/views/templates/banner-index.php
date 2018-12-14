@@ -17,8 +17,16 @@
                 <div class="banner-w3ls-4">
                 </div>
             </li>
-            <li class="prev">
+            <li>
                 <div class="banner-w3ls-5">
+                </div>
+            </li>
+            <li>
+                <div class="banner-w3ls-6">
+                </div>
+            </li>
+            <li class="prev">
+                <div class="banner-w3ls-7">
                 </div>
             </li>
         </ul>
@@ -28,6 +36,8 @@
             <li data-index="2"></li>
             <li data-index="3"></li>
             <li data-index="4"></li>
+            <li data-index="5"></li>
+            <li data-index="6"></li>
         </ul>
         <div class="banner-text-posi-w3ls">
             <div class="banner-text-whtree">

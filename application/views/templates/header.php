@@ -25,7 +25,7 @@
         <link href="<?php echo base_url(). 'assets/css/mislider.css';?>" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(). 'assets/css/mislider-custom.css';?>" rel="stylesheet" type="text/css" />
         <!-- Style-Css -->
-        <link rel="stylesheet" href="<?php echo base_url(). 'assets/css/style.css';?>" type="text/css" media="all" />
+        <link rel="stylesheet" href="<?php echo base_url(). 'assets/css/style.css';?>?version=1.0" type="text/css" media="all" />
         <!-- Font-Awesome-Icons-Css -->
         <link rel="stylesheet" href="<?php echo base_url(). 'assets/css/fontawesome-all.css';?>">
         <!-- //Custom-Files -->
