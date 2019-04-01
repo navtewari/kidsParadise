@@ -509,8 +509,6 @@ Customized Definitions --------------------->>>>>
 define('_SCHOOL_', "Kids Paradise School, Rudrapur");
 define('_SCHOOL_ABREV_', "KPPS");
 define('ADMIN___', 'http://localhost/dpanel');
-//define('ADMIN___', $config['base_url'].'/dpanel');
-define('AGIPANEL___', $config['base_url'].'/dpanel');
 /*
 -------------------------------------------->>>>>
 */
